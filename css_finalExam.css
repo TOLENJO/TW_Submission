@@ -1,0 +1,22 @@
+body {
+  border: 2px solid green;
+  height: 500px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed purple;
+  width: 500px;
+  margin: auto;
+}
+
+.col div {
+  margin: 20px;
+  padding: 30px;
+  border: 1px solid red;
+  color: blue;
+  background-color: pink;
+  font-size: x-large;
+}
