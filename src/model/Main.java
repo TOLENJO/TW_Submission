@@ -1,11 +1,13 @@
 package model;
-
-import model.Animal.Animal;
 import model.Animal.Tiger;
+import model.Printer.Printer;
+import model.Printer.ColoredPrinter;
+
+import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        makeTigerMeow();
+        printPapers();
     }
 
     private static void showStudents() {
@@ -22,5 +24,15 @@ public class Main {
     private static void makeTigerMeow() {
         Tiger tiger = new Tiger(3, 78);
         tiger.doTheMeow();
+    }
+
+    private static void printPapers() {
+        //Uses the parent class method
+        Printer basicPrinter = new Printer("HP");
+        basicPrinter.printPaper();
+
+        //Uses the subclass method in which it overridden the parent method
+        ColoredPrinter coloredPrinter = new ColoredPrinter();
+        coloredPrinter.printPaper();
     }
 }
